@@ -1,0 +1,182 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Admin_Admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .menu
+        {
+            padding-top:100px;
+            background-color :transparent;
+        }
+        .style1
+        {
+            width: 100%;
+            background-color: #343477;
+            height: 100px;
+        }
+        .style2
+        {
+            font-size: 45pt;
+            text-align:center;
+            width:60%;
+        }
+        .form
+        {
+            margin-bottom: 10px;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        .style4
+        {
+            width: 100%;
+            height: 600px;
+            height:900px;
+            background-color: #FFFFFF;
+        }
+        .ver11
+        {
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            font-size: 9px;
+        }
+        .style8
+        {
+            font-family: "Courier New";
+            font-weight:bolder;
+            text-align:center;
+            
+           
+            
+        }
+        .marquee {
+width:80%;
+height:20px;
+background-color: #9999FF;
+border: 3px #9999FF ;
+white-space: nowrap; 
+overflow: hidden;
+}
+
+.logout_btn
+{
+    
+    text-align:center;
+    margin-left:450px;
+    background-color:transparent;
+    margin-right:50px;
+    height:30px;
+    font-family:Verdana, Arial, Helvetica, sans-serif; 
+ 
+ 
+}
+
+
+    </style>
+    <link href="../StyleSheet.css" rel="Stylesheet" type"text/css" />
+</head>
+<body style="background-color:#404040">
+    <form id="form1" runat="server" class="form">
+    <div>
+
+
+    
+        <table cellpadding="0" cellspacing="1" class="style1">
+            <tr>
+            <td>
+                <asp:Image ID="Image2" ImageUrl="~/back.png" CssClass="style2" runat="server" Height=100px />
+            </td>
+                <td class="style2" align="center" borderstyle="Outset">
+                    <span class="style8"><strong>Online Voting</strong></span>
+                </td>
+                <td align="left">
+                 <asp:Label ID="User_Visited_lbl" Font-Bold="true" CssClass="style8" Text="Number of User Visited" runat="server"></asp:Label>&nbsp;<br />
+                    <asp:Label ID="Count_lbl" Font-Bold="true" CssClass="style8" runat="server"></asp:Label>&nbsp;</td>
+            </tr>
+        </table>
+        
+        <asp:Menu ID="Menu1" runat="server" Font-Bold="True" Height="40px" Orientation="Horizontal"
+            Width="100%" BackColor="#99abb6" Font-Names="Helvetica" ForeColor="Black" ItemWrap="True"
+            Font-Size="Large">
+            <StaticMenuItemStyle ItemSpacing="0px" HorizontalPadding="15px" VerticalPadding="8px" />
+            <DynamicHoverStyle BackColor="#456f95" ForeColor="#FFFF66" />
+            
+            <DynamicMenuItemStyle BackColor="#333333" BorderColor="#333333" BorderWidth="3px"
+                ForeColor="White" Font-Names="Shruti" Font-Size="Medium" Height="30px" 
+                ItemSpacing="2px" Width="200px" />
+            <StaticHoverStyle BackColor="#456f95" Height="25px" ForeColor="#FFFF66" BorderColor="#FF9933" />
+            <Items>
+                <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/Home.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="About us" Value="About us">
+                </asp:MenuItem>
+                <asp:MenuItem Text="Login" Value="Login">
+                    <asp:MenuItem Text="Voter Login" Value="Voter Login" NavigateUrl="~/Citizen/Login.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Officer/Admin Login" Value="Administrator" NavigateUrl="~/Admin/officeradminlogin.aspx"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="New Registration" Value="New Registration" NavigateUrl="~/Citizen/Registration.aspx">
+                    
+                </asp:MenuItem>
+                <asp:MenuItem Text="Query Panel" Value="Query Panel"></asp:MenuItem>
+                <asp:MenuItem Text="Upcoming elections" Value="Upcoming elections"></asp:MenuItem>
+            </Items>
+           
+        </asp:Menu>
+        <div style="width:100%; height:30px; background-color:#456f95;">
+           
+          
+        </div>
+     
+            <table class="style4">
+                <tr>
+                    <td style="vertical-align: top; width:20%">
+                    <div style="float:left; width: 222px; height: 484px;">
+                    
+                    <asp:Menu ID="Menu2" CssClass="menu"  runat="server" Font-Bold="True" Height="40px"
+            Width="70%" Font-Names="Helvetica" ForeColor="Black" ItemWrap="True"
+            Font-Size="Large" >
+            <StaticMenuItemStyle ItemSpacing="0px" HorizontalPadding="15px" VerticalPadding="8px" />
+            <DynamicHoverStyle BackColor="#456f95" ForeColor="#FFFF66" />
+            
+            <DynamicMenuItemStyle BackColor="#333333" BorderColor="#333333" BorderWidth="3px"
+                ForeColor="White" Font-Names="Shruti" Font-Size="Medium" Height="30px" 
+                ItemSpacing="2px" Width="200px" />
+            <StaticHoverStyle BackColor="#456f95" Height="25px" ForeColor="#FFFF66" BorderColor="#FF9933" />
+            <Items>
+             <asp:MenuItem Text="Start Voting" Value="Start Voting" NavigateUrl="~/Admin/Welcome2.aspx"></asp:MenuItem>
+              <asp:MenuItem Text="Previous Elections" Value="Previous Elections" NavigateUrl="~/Admin/ElectionSummary.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Add District" Value="Add District" NavigateUrl="~/Admin/Add District.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Users" Value="Users">
+                    <asp:MenuItem Text="Update/Remove Voter" Value="Voter" NavigateUrl="~/Admin/UserList.aspx"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="Votes Counting" Value="Votes Counting" NavigateUrl="~/Admin/VotesCounting.aspx" />
+                <asp:MenuItem Text="Add Post" Value="Add Post" NavigateUrl="~/Admin/AddPost.aspx" />
+                <asp:MenuItem Text="Election In Process" Value="Election In Process" NavigateUrl="~/Admin/ElectionProcess.aspx">
+      
+                </asp:MenuItem>
+                
+                <asp:MenuItem Text="Officer" Value="Officer">
+                 <asp:MenuItem Text="Add Officer" Value="Add Officer" NavigateUrl="~/Admin/OficerRegistration.aspx"></asp:MenuItem>
+                 <asp:MenuItem Text="Remove Oficer" Value="Remove Officer" NavigateUrl="~/Admin/EditRemoveCandidate.aspx"></asp:MenuItem>
+                </asp:MenuItem>
+            </Items>
+           
+        </asp:Menu>
+                    
+                    </div>
+                    </td>
+                    <td>
+                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+              
+                            </td>
+                        </tr>
+                    </table>
+
+
+       
+    </div>
+    </form>
+</body>
+</html>

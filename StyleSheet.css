@@ -1,0 +1,375 @@
+﻿
+
+
+.div
+{
+     height:auto;
+}
+
+
+
+
+
+
+.logout_btn
+{
+    
+    text-align:center;
+    background-color:transparent;
+    height:30px;
+    font-family:Verdana, Arial, Helvetica, sans-serif; 
+    box-shadow: 5px 5px 5px #888888;
+    border-radius:5px;
+    margin-bottom:830px;
+    position:absolute;
+    right:150px;
+    top: 200px;
+}
+ .style3_img
+        {
+            font-size: 45pt;
+            text-align:center;
+            float:left;
+            
+        }
+        
+        
+        .Admin_Login
+        {
+             background-color:transparent;
+             font-family:Verdana, Arial, Helvetica, sans-serif; 
+             box-shadow: 5px 5px 5px #888888;
+             border-radius:5px;
+        }
+        
+       .text
+       {
+           color: #fff;
+            background-color:#000fff;
+            width:580px;
+            font-size:xx-large;
+            position:absolute;
+            top:300px;
+            text-align:center;
+            margin-left:100px;
+           text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #49ff18, 0 0 30px #49ff18, 0 0 40px #49ff18, 0 0 55px #49ff18, 0 0 75px #49ff18
+       }
+       
+       .div_start
+       
+      {
+            font-size:x-large;
+            position:absolute;
+            top:400px;
+             margin-left:275px;
+          
+       }
+       
+       .Start_btn
+       {
+            text-align:center;
+            background-color:transparent;
+            height:30px;
+            font-family:Verdana, Arial, Helvetica, sans-serif; 
+            box-shadow: 5px 5px 5px #888888;
+            border-radius:5px;
+            margin-bottom:650px;
+           
+       }
+       
+       .panel
+       {
+            text-align:center;
+            background-color:#456f95;
+            height:30px;
+            width:500px;
+            font-family:Verdana, Arial, Helvetica, sans-serif; 
+            box-shadow: 5px 5px 5px #888888;
+            border-radius:5px;
+             position:absolute;
+            top:350px;
+            margin-left:20px;  
+           
+       }
+       
+       .Select_choice_tr
+       {
+           background-color:#456f95;
+       }
+       
+       .Start_vote_btn
+       {
+            text-align:center;
+            background-color:#9999FF;
+            height:30px;
+            width:100px;
+            font-family:Verdana, Arial, Helvetica, sans-serif; 
+            box-shadow: 5px 5px 5px #888888;
+            border-radius:5px;
+            position:absolute;
+            top:490px;
+            left:350px;
+            
+       }
+       
+       .img_btn
+       {
+           width:30px;
+           height:20px;
+           box-shadow: 5px 5px 5px #888888;
+           border-radius:5px;
+           position:absolute;
+           top:360px;
+           margin-left:10px;
+          left: 336px;
+}
+       
+       .sdate_imgbtn
+       {
+            width:30px;
+           height:20px;
+           box-shadow: 5px 5px 5px #888888;
+           border-radius:5px;
+           position:absolute;
+           top:265px;
+           margin-left:10px;
+           right:105px;
+         
+       }
+       .calendar
+       {
+            width:40px;
+           height:30px;
+           box-shadow: 5px 5px 5px #888888;
+           border-radius:5px;
+       }
+       
+       .adddistrict_lbl
+       {
+           color: #fff;
+	       text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;
+	       font: 60px 'ChunkFiveRegular';
+	       position:absolute;
+            top:240px;
+            margin-left:170px;
+       }
+           
+        .Add_District
+       {
+            text-align:center;
+            background-color:transparent;
+            height:150px;
+            font-family:Verdana, Arial, Helvetica, sans-serif; 
+            box-shadow: 5px 5px 5px #888888;
+            border-radius:5px;
+            position:absolute;
+            top:400px;
+            margin-left:150px;
+            width:350px;
+       }
+       
+      .hit-the-floor {
+color:Black;
+font-size: 12em;
+font-weight: bold;
+font-family: Helvetica;
+text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+
+
+
+body {
+  background-color: #f1f1f1;
+}
+
+  .registration
+  {
+       text-align:center;
+            background-color:Transparent;
+            height:30px;
+            width:500px;
+            font-family:Verdana, Arial, Helvetica, sans-serif; 
+            box-shadow: 5px 5px 5px #888888;
+            border-radius:5px;
+             position:absolute;
+            top:400px;
+            margin-left:380px;  
+           
+  }
+  
+  .textbox_radius
+  {
+      border-radius:4px;
+  }
+  .ddl_state_user_register
+  {
+     position:absolute;
+     left:80px;
+     height:20px;
+     width:180px;
+     bottom:200px;
+     border-radius:4px;
+    
+  }
+  .ddl_district_userregister
+  {
+      position:absolute;
+     left:350px;
+     height:20px;
+     width:180px;
+     bottom:198px;
+     border-radius:4px;
+      
+  }
+  
+  .district_label_userregister
+  {
+      position:absolute;
+     left:280px;
+     bottom:200px;
+  }
+  
+ .register_btn_user
+ {
+       text-align:right;
+            background-color:#9999FF;
+            height:30px;
+            font-family:Verdana, Arial, Helvetica, sans-serif; 
+            box-shadow: 5px 5px 5px #888888;
+            border-radius:5px;
+            position:absolute;
+             left:450px;
+             bottom:10px;
+ } 
+ .registration_voterid
+  {
+       text-align:center;
+            background-color:Transparent;
+            height:20px;
+            width:700px;
+            font-family:Verdana, Arial, Helvetica, sans-serif; 
+            box-shadow: 5px 5px 5px #888888;
+            border-radius:5px;
+             position:absolute;
+            top:420px;
+            margin-left:200px;  
+           
+  }
+ 
+ .UserList_pnl
+  {
+       text-align:center;
+            background-color:Transparent;
+            height:20px;
+            width:1000px;
+            font-family:Verdana, Arial, Helvetica, sans-serif; 
+            box-shadow: 5px 5px 5px #888888;
+            border-radius:5px;
+             position:absolute;
+            top:420px;
+            margin-left:200px;  
+           
+  } 
+  .confirm_btn_user
+  {
+            text-align:right;
+            background-color:#9999FF;
+            height:30px;
+            font-family:Verdana, Arial, Helvetica, sans-serif; 
+            box-shadow: 5px 5px 5px #888888;
+            border-radius:5px;
+            position:absolute;
+             left:350px;
+             bottom:10px;
+  }
+  
+  .vote_btn
+  {
+       text-align:center;
+            background-color:#9999FF;
+            height:30px;
+            font-family:Verdana, Arial, Helvetica, sans-serif; 
+            box-shadow: 5px 5px 5px #888888;
+            border-radius:5px;
+            position:absolute;
+             left:290px;
+             top:100px;
+             }
+
+   .mydatagrid
+
+{
+
+    border: solid 3px #456f95;
+    box-shadow: 5px 5px 5px #888888;
+            border-radius:10px;
+    min-width: 300px;
+
+}
+.header
+
+{
+
+    background-color: #456f95;
+    font-family:Verdana, Arial, Helvetica, sans-serif; 
+    color: black;
+    height: 25px;
+    text-align:center;
+    font-size: 16px;
+}
+ 
+.rows
+{
+
+    background-color: #9999FF;
+    font-family:Verdana, Arial, Helvetica, sans-serif; 
+    font-size: 14px;
+    color: #000;
+    min-height: 25px;
+    text-align:center;
+    font-weight:500;
+    
+
+}
+
+ 
+.mydatagrid a /** FOR THE PAGING ICONS  **/
+
+{
+    background-color: Transparent;
+    padding: 5px 5px 5px 5px;
+
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+
+.mydatagrid span /** FOR THE PAGING ICONS CURRENT PAGE INDICATOR **/
+
+{
+    background-color: #fff;
+    color: #000;
+    padding: 5px 5px 5px 5px;
+}
+
+.pager
+{
+    background-color: #5badff;
+    font-family:Verdana, Arial, Helvetica, sans-serif; 
+    color: black;
+    height: 30px;
+    text-align: left;
+}
+ 
+.Align_Grd{
+text-align:center;
+}
+
+
+
+
+
+
+

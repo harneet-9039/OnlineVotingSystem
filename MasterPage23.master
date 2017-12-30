@@ -1,0 +1,182 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage23.master.cs" Inherits="MasterPage23" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+            background-color:#343477/*456f95*/;
+            
+            height: 100px;
+        }
+        .style2
+        {
+            font-size: 45pt;
+            text-align:center;
+            float:right;
+           
+        }
+        
+      
+        
+       
+        .form
+        {
+            margin-bottom: 20px;
+            margin-left: 10%;
+            margin-right: 10%;
+            max-height:500px;
+        }
+        .style3
+        {
+            width: 100%;
+            height: 30px;
+            background-color: #343477;
+        }
+        .style4
+        {
+            width: 100%;
+            height: 1177px;
+            background-color: #FFFFFF;
+        }
+        .ver11
+        {
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            font-size: 9px;
+        }
+     
+     
+     .main_head
+{
+    font-size: 45pt;
+            text-align:center;
+}
+.main
+{
+    color:Black;
+font-size: 12em;
+font-weight: bold;
+font-family: Helvetica;
+text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+
+.image
+{
+    width:1000px;
+    height:300px;
+    margin:2px;
+    border:5px;
+     border-radius:4px;
+    
+} 
+
+
+
+    </style>
+    <link rel="Stylesheet" href="~/StyleSheet.css" type="text/css" />
+</head>
+<body style="background-color:#404040; height:auto">
+    <form id="form1" runat="server" class="form">
+    <div style="height:auto; width:auto">
+        <table cellpadding="0" cellspacing="1" class="style1">
+            <tr>
+            <td>
+                <asp:Image ID="Image2" ImageUrl="~/back.png" CssClass="style3_img" runat="server" Height="100px" />
+            </td>
+                <td class="main_heading" align="center" borderstyle="Outset">
+                    <asp:Label ID="Head_lbl" runat="server" Text="Online Voting" CssClass="main_head" Font-Names="Papyrus"></asp:Label>
+                </td>
+           
+                <td align="left">
+                    &nbsp;
+                    <asp:Image ID="Image3" ImageUrl="~/back.png" CssClass="style2" runat="server" 
+                        Height="100px" />
+                </td>
+            </tr>
+        </table>
+        
+        <asp:Menu ID="Menu1" runat="server" Font-Bold="True" Height="40px" Orientation="Horizontal"
+            Width="100%" BackColor="#565695" Font-Names="Papyrus" ForeColor="Black" ItemWrap="True"
+            Font-Size="Large">
+            <StaticMenuItemStyle ItemSpacing="0px" HorizontalPadding="15px" VerticalPadding="8px" />
+            <DynamicHoverStyle BackColor="#456f95" ForeColor="#FFFF66" />
+            
+            <DynamicMenuItemStyle BackColor="#333333" BorderColor="#333333" BorderWidth="3px"
+                ForeColor="White" Font-Names="Shruti" Font-Size="Medium" Height="30px" 
+                ItemSpacing="2px" Width="200px" />
+            <StaticHoverStyle BackColor="#456f95" Height="25px" ForeColor="#FFFF66" BorderColor="#FF9933" />
+            <Items>
+                <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/Home.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="About us" Value="About us">
+                </asp:MenuItem>
+                <asp:MenuItem Text="Login" Value="Login">
+                    <asp:MenuItem Text="Voter Login" Value="Voter Login" NavigateUrl="~/Citizen/Login.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Officer/Admin Login" Value="Administrator" NavigateUrl="~/Admin/officeradminlogin.aspx"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="New Registration" Value="New Registration" NavigateUrl="~/Citizen/Registration.aspx">
+                    
+                </asp:MenuItem>
+                <asp:MenuItem Text="Query Panel" Value="Query Panel"></asp:MenuItem>
+                <asp:MenuItem Text="Upcoming elections" Value="Upcoming elections" NavigateUrl="~/UpcomingElections.aspx"></asp:MenuItem>
+            </Items>
+           
+        </asp:Menu>
+        <table cellpadding="0" cellspacing="1" class="style3">
+           <tr>
+            <td style=" width:200px; text-align:center">
+                <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
+                </asp:ToolkitScriptManager>
+
+                <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                <ContentTemplate>
+                 <asp:Timer ID="Timer_Ajax" runat="server" Interval="2000" 
+                    ontick="Timer_Ajax_Tick">
+                </asp:Timer>
+                    <asp:Image ID="Image1" CssClass="image" runat="server" />
+                </ContentTemplate>
+                
+
+                </asp:UpdatePanel>
+
+
+              
+            </td>
+           
+           </tr>
+           
+           
+            <tr>
+          
+            
+                <td align="center">
+                   <marquee style="background-color:#99abb6;  font-family:Verdana, Arial, Helvetica, sans-serif" behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();"  <b>WELCOME TO Online Polling System "IT PROVIDE A BETTER WAY OF VOTING IN INDIA"</b></marquee>
+                    &nbsp;
+                </td>
+            </tr>
+        </table>
+        <table class="style4">
+            <tr>
+                <td style="vertical-align: top; width: 80%">
+                <div style="height:auto">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                    </div>
+                </td>
+     
+                        </tr>
+                    </table>
+          
+       
+    </div>
+    </form>
+</body>
+</html>
+
