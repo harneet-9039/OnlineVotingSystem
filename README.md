@@ -27,4 +27,13 @@ Various operational works that are done in the system are: -
 2. SQL Server
 3. XAMPP Server
 
-![Not Found](https://doc-0c-1c-docs.googleusercontent.com/docs/securesc/eq9nrilkbm06e1m86t4vgppu8bvo8mtr/sriiokjtvklbv4iusm0i0b4j9el4uafi/1530453600000/14885868026916837843/14885868026916837843/1jZQiNGkhcZ77eAID7iTHrjeBA-5oWYD3?e=download&nonce=vppj4giknh0vs&user=14885868026916837843&hash=f22lndm4nat1kjqjfbogv3sdumf9ukvj)
+# Entity Relationship Diagram
+
+![alt text](https://raw.githubusercontent.com/harneet-9039/OnlineVotingSystem/master/temp1.png)
+
+# Usage
+
+Clone the repository: git clone https://github.com/harneet-9039/OnlineVotingSystem.git<br>
+Run the project in visual studio 2012 and above
+<br><br>
+Note: Make sure you have installed all the external libraries and most importantly ajax toolkit.
